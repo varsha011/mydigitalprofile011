@@ -122,8 +122,6 @@ body {
     text-align: center;
 }
 
-
-
 .home-content h1 {
     font-size: 3.5rem;
     font-weight: 700;
@@ -131,7 +129,6 @@ body {
     display: inline-block; /* Ensure it stays on one line */
     white-space: nowrap;  /* Prevent line breaks within the h1 */
 }
-
 
 .highlight {
     color: var(--primary);
@@ -348,7 +345,6 @@ body {
     line-height: 1.5;
 }
 
-
 /* Contact Section */
 .contact {
     padding: 6rem 0;
@@ -442,28 +438,22 @@ footer {
     color: var(--primary); /* Replace with your desired color */
     white-space: nowrap; /* Prevent wrapping of text */
     overflow: hidden; /* Hide overflowing text */
-    display: inline-block;
-    border-right: 2px solid var(--primary); /* The blinking cursor */
-    animation: blink 0.7s step-end infinite;
+    display: inline-block; /* Ensure text stays on one line */
+    width: 0; /* Start with zero width */
+    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite; /* Typing and blinking */
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
 
 @keyframes blink {
     50% {
         border-color: transparent;
     }
-}
-
-/* Profile Picture */
-.profile-pic {
-    margin: 0 auto 20px; /* Center image horizontally and add some space below */
-    width: 150px; /* Set the desired width */
-    height: 150px; /* Set the height */
-    overflow: hidden; /* Ensure the image stays within the circular shape */
-    border-radius: 50%; /* Make the image circular */
-}
-
-.profile-pic img {
-    width: 100%; /* Make the image fill the container */
-    height: 100%; /* Make the image fill the container */
-    object-fit: cover; /* Crop the image to fit the circle */
 }
