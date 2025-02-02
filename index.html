@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <section class="home" id="home" style="background-image: url('https://raw.githubusercontent.com/varsharana/digitalprofile/main/bg-image.jpg');">
+    <div class="overlay"></div>
+    <div class="max-width">
+        <div class="home-content">
+            <!-- Profile Image -->
+            <div class="profile-pic">
+                <img src="https://avatars.githubusercontent.com/u/92987436?v=4" alt="Varsha Rana">
+            </div>
+            <h1>👋 Hello, I'm <span class="highlight">Varsha Rana</span></h1>
+            <p class="profession"><span class="typing">A Senior Cloud Engineer</span></p>
+            <div class="button-group">
+                <a href="#contact" class="btn-primary">Let's Connect</a>
+                <a href="Resume.pdf" class="btn-primary" download>Download My Resume</a>
+            </div>
+            <script src="scripts/typing-effect.js"></script>
+        </div>
+    </div>
+</section>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Varsha Rana | Cloud & Infrastructure Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Varsha Rana - Cloud Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Varsha Rana</h1>
-            <p>Cloud & Infrastructure Engineer | GCP Certified</p>
-            <a href="#about" class="cta-button">Learn More</a>
-        </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <img src="profile-pic.jpg" alt="Varsha Rana" class="profile-pic">
-            <h2>About Me</h2>
-            <p>I'm a passionate Cloud & Infrastructure Engineer with experience in cloud platforms like Google Cloud and DevOps practices. My focus is on optimizing cloud infrastructure and enhancing operational excellence.</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>GCP</li>
-                <li>Docker & Kubernetes</li>
-                <li>CI/CD</li>
-                <li>Python Automation</li>
-                <li>Datadog Monitoring</li>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="max-width">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#awards">Awards</a></li>
             </ul>
         </div>
-    </section>
+    </nav>
+<section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About Me</h2>
+        <div class="about-content">
+            <div class="column left">
+                <img src="https://avatars.githubusercontent.com/u/25576220?v=4" alt="Varsha Rana">
+            </div>
+            <div class="column right">
+                <p>Hello! I'm <strong>Varsha Rana</strong>, a passionate DevOps Engineer with a keen interest in Cloud Computing, DevOps, and automation. I specialize in building scalable infrastructure using Kubernetes, Terraform, and GCP, and I'm dedicated to automating CI/CD pipelines to enhance development workflows.</p>
+                <p>On my <a href="https://github.com/varsharana" target="_blank">GitHub profile</a>, you'll find projects that showcase my expertise in these areas. I'm continuously learning and adopting various DevOps tools and methodologies to develop and deploy production-ready applications efficiently.</p>
+                <p>Beyond my professional work, I enjoy exploring new technologies and sharing knowledge with the community. Feel free to connect with me on <a href="https://www.linkedin.com/in/varsha-rana-1115b7233" target="_blank">LinkedIn</a> to discuss technology, DevOps practices, or potential collaborations.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Varsha Rana | All Rights Reserved</p>
+        <p>Created by <strong>Varsha Rana</strong> &copy; 2025</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
