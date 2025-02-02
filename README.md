@@ -1,4 +1,4 @@
-# mydigitalprofile011# Digital Profile - Varsha Rana
+# Digital Profile - Varsha Rana
 
 Welcome to my digital portfolio! This project showcases my expertise, skills, and accomplishments as a **Senior Cloud & Infrastructure Engineer**. The website provides insights into my technical abilities, experience, and certifications while maintaining a modern, visually appealing design.
 
