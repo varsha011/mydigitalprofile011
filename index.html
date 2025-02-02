@@ -1,143 +1,86 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Importing Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Custom Properties */
-:root {
-    --primary: #FF5733; /* Bright Red-Orange */
-    --secondary: #FFD700; /* Gold */
-    --accent: #00CED1; /* Dark Turquoise */
-    --dark: #121212; /* Deep Black */
-    --light: #F8F9FA; /* Soft White */
-    --transition: all 0.3s ease-in-out;
-}
+    <!-- Navigation Section -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#">Your Logo</a>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-/* Reset & Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+    <!-- Hero Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>
+                Hello, I'm <span class="typing"></span>
+            </h1>
+        </div>
+    </section>
 
-html {
-    scroll-behavior: smooth;
-}
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <img src="profile-pic.jpg" alt="Your Name">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum.</p>
+        </div>
+    </section>
 
-body {
-    background: var(--light);
-    color: var(--dark);
-    line-height: 1.8;
-}
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-content">
+            <div class="skill-card">
+                <h3>Skill 1</h3>
+                <p>Description of skill 1.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Skill 2</h3>
+                <p>Description of skill 2.</p>
+            </div>
+        </div>
+    </section>
 
-/* Layout Container */
-.max-width {
-    max-width: 1300px;
-    margin: auto;
-    padding: 0 2.5rem;
-}
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="experience-item">
+            <h3>Experience</h3>
+            <p>Description of your experience.</p>
+        </div>
+    </section>
 
-/* Navigation Styles */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: var(--primary);
-    padding: 1.2rem;
-    z-index: 100;
-    transition: var(--transition);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-card">
+            <h3>Contact Me</h3>
+            <p>Contact details here.</p>
+        </div>
+    </section>
 
-.navbar .max-width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Your Name. All rights reserved.</p>
+    </footer>
 
-.logo a {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--light);
-    text-decoration: none;
-}
-
-.menu {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-}
-
-.menu a {
-    color: var(--light);
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: var(--transition);
-}
-
-.menu a:hover {
-    color: var(--secondary);
-}
-
-/* Awards Section */
-.awards {
-    padding: 6rem 0;
-    background: var(--secondary);
-    text-align: center;
-}
-
-.award-card {
-    background: var(--light);
-    padding: 2.5rem;
-    border-radius: 12px;
-    text-align: center;
-    transition: var(--transition);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-}
-
-.award-card:hover {
-    transform: translateY(-7px);
-}
-
-.award-card i {
-    font-size: 3.5rem;
-    color: var(--primary);
-    margin-bottom: 1.2rem;
-}
-
-.award-card h3 {
-    font-size: 1.8rem;
-    color: var(--dark);
-    margin-bottom: 0.7rem;
-}
-
-.award-card p {
-    color: var(--dark);
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.awards-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
-}
-
-/* Updated Awards */
-.awards-content .award-card:nth-child(1) p::after {
-    content: " Received a prestigious Spot Award from my manager for outstanding contributions and dedication.";
-}
-
-.awards-content .award-card:nth-child(2) p::after {
-    content: " Honored with an excellence award from my Senior Director at LTI Mindtree for exceptional innovation and performance.";
-}
-
-/* Footer */
-footer {
-    background: var(--dark);
-    padding: 2.5rem;
-    text-align: center;
-    color: var(--light);
-    font-size: 1.1rem;
-}
-
+    <!-- Link to external JS -->
+    <script src="script.js"></script>
+</body>
+</html>
