@@ -97,7 +97,7 @@ body {
     position: relative;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; /* Optional parallax effect */
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
@@ -112,7 +112,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency */
     z-index: 1;
 }
 
@@ -122,13 +122,16 @@ body {
     text-align: center;
 }
 
+
+
 .home-content h1 {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    display: inline-block;
-    white-space: nowrap;
+    display: inline-block; /* Ensure it stays on one line */
+    white-space: nowrap;  /* Prevent line breaks within the h1 */
 }
+
 
 .highlight {
     color: var(--primary);
@@ -157,17 +160,310 @@ body {
     color: var(--dark);
 }
 
+/* About Section */
+.about {
+    padding: 6rem 0;
+    background: var(--navy);
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--lightest);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.column.left img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary);
+    padding: 5px;
+    transition: var(--transition);
+}
+
+.column.left img:hover {
+    transform: scale(1.05);
+}
+
+/* Stats Grid */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.stat-box {
+    background: var(--dark);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+.number {
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* Skills Section */
+.skills {
+    padding: 6rem 0;
+}
+
+.skills-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    background: var(--navy);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+/* Experience Section */
+.experience {
+    padding: 6rem 0;
+    background: var(--navy);
+}
+
+.experience-item {
+    background: var(--dark);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    transition: var(--transition);
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.experience-title {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.experience-company {
+    color: var(--lightest);
+    font-size: 1.2rem;
+}
+
+.experience-date {
+    color: var(--light);
+    font-size: 0.9rem;
+}
+
+/* Certifications Section */
+.certifications {
+    padding: 6rem 0;
+}
+
+.cert-card {
+    background: var(--navy);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+}
+
+.cert-card i {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Awards & Recognition Section */
+.awards {
+    padding: 6rem 0;
+    background: var(--navy);
+}
+
+.awards-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Spacing between cards */
+}
+
+.award-card {
+    background: var(--dark);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+.award-card:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.award-card i {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.award-card h3 {
+    font-size: 1.5rem;
+    color: var(--lightest);
+    margin-bottom: 0.5rem;
+}
+
+.award-card p {
+    color: var(--light);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 6rem 0;
+    background: var(--navy);
+}
+
+.contact .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--lightest);
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.contact-card {
+    background: var(--dark);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-card i {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    color: var(--lightest);
+    margin: 0.5rem 0;
+}
+
+.contact-card p {
+    color: var(--light);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.contact-card a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.contact-card a:hover {
+    color: var(--primary-dark);
+}
+
+/* Footer */
+footer {
+    background: var(--navy);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .column.left {
+        margin: auto;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.typing {
+    font-weight: bold;
+    color: var(--primary); /* Replace with your desired color */
+    white-space: nowrap; /* Prevent wrapping of text */
+    overflow: hidden; /* Hide overflowing text */
+    display: inline-block;
+    border-right: 2px solid var(--primary); /* The blinking cursor */
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 /* Profile Picture */
 .profile-pic {
-    margin: 0 auto 20px;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 50%;
+    margin: 0 auto 20px; /* Center image horizontally and add some space below */
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the height */
+    overflow: hidden; /* Ensure the image stays within the circular shape */
+    border-radius: 50%; /* Make the image circular */
 }
 
 .profile-pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Crop the image to fit the circle */
 }

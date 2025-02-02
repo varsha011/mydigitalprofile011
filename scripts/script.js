@@ -1,6 +1,6 @@
 // Typing effect logic
 const typedTextSpan = document.querySelector(".typing");
-const textArray = ["A Cloud & Infrastructure Engineer", "GCP Specialist", "Datadog Expert"];
+const textArray = ["A DevOps Engineer", "Cloud Enthusiast", "Kubernetes Specialist", "Bigquery Expert"];
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000; // Delay between current and next text
